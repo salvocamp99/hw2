@@ -1,0 +1,451 @@
+a{
+    cursor:pointer;
+}
+a.button{
+border:3px solid black;
+padding:15px 20px;
+border-radius: 20px;
+}
+a.button:hover{
+background-color:white ;
+color:black;
+}
+
+body{
+color: black;
+font-family: 'Inter',serif;
+font-size:20px;
+margin:0;
+width:100%;
+}
+.button,header nav,
+footer h1,h2{
+font-family: "Open Sans",sans-serif;
+font-style: normal;
+text-transform: uppercase;
+}
+
+
+header{
+    color:lightgray;
+    height: 700px;
+    background-image:url('https://www.ilgiornaledelcibo.it/wp-content/uploads/2017/10/tagliere-ulivo.jpg');
+    background-position:center;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    position: relative;
+}
+#overlay{
+    background-color:rgba(0, 0, 0, .3);
+    position:absolute;
+    top: 0; 
+    bottom:0;
+    height: 100%;
+    width: 100%;
+    }
+    header h1{
+      font-size:25px ;
+      line-height:60px;
+      text-align: center;
+      font-weight: bold;
+      z-index:1;
+      text-transform: uppercase;
+    }
+
+header h1 strong{
+    font-size:40px;
+    color:brown;
+    background-color:lightgray ;
+}
+header nav{
+    background-color:rgb(231, 226, 226);
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    font-size:18px;
+    padding:20px;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+}
+nav #flex-conteiner{
+    display:flex ;
+    flex-direction:row;
+    color: rgba(250, 243, 243, 0.750);
+    justify-content:space-between;
+    align-items: center;
+    padding-left:none;
+    border-bottom:2px solid grey ;
+    font-weight: bold;
+    height: 70px;
+    flex-grow: 1;
+
+
+}
+nav #flex-conteiner a{
+color:black;
+border-right:2px solid black ;
+padding:10px 12px;
+margin: 0;
+font-family: "Monteserrat",sans-serif;
+font-size: 18px;
+text-decoration: none;
+}
+nav div img{
+display: flex;
+width:350px;
+height:50px;
+
+}
+
+#flex-conteiner a:hover{
+background-color: white;
+color:black;
+}
+#menu{
+    display:none;
+}
+#menu div{
+  width:35px;
+  height: 3px;
+  background-color:rgba(250, 243, 243, 0.750);
+  margin:7px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    height:auto;
+    align-items: center;
+    background-color:rgb(202, 202, 201);
+}
+
+section h1{
+    font-size:40px ;
+    font-family:"Roboto",sans-serif ;
+    font-weight:bold ;
+    font-style:italic ;
+    text-align: center;
+
+}
+
+#testo1{
+    width:1000px;
+    text-align: left;
+    margin-top:40px;
+    margin-bottom:10px;
+    color:black;
+    font-size:35px ;
+    font-weight:bold;
+    margin-left:-500px ;
+    
+}
+
+.ristoranti div.hidden{
+    display: none;
+}
+
+
+.hidden{
+    display:none;
+}
+.testo{
+    width:700px;
+    text-align: left;
+    margin-top:40px;
+    margin-bottom:10px;
+    color:black;
+    font-size:35px ;
+    font-weight:bold;
+    margin-left:-255px ;
+}
+
+#choice, #ristoranti_seguiti{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: top;
+    width:1500px;
+    background-color:rgb(231, 226, 226);
+}
+#modale{
+  position: fixed;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  background-color:rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  }
+  #modale.hidden{
+    display:none;
+  }
+  #modale img{
+    height: 50%;
+    }
+  .no-scroll{
+    overflow: hidden;
+  }
+#choice.ristoranti{
+    margin-bottom: 100px;
+}
+
+.ristoranti div, .div{
+    display: flex;
+    flex-direction: column;
+    justify-content:top;
+    align-items: center;
+    width:300px;
+    height:350px;
+    border:3px solid black;
+    border-radius:25px;
+    margin:15px 5px;
+    position:relative;
+    background-color:lightgray ;
+}
+
+.ristoranti div img, .img{
+    margin-top: 10px;
+    width:200px;
+    height:140px;
+    border-radius:10px;
+}
+
+.ristoranti div h1, .h1{
+    font-size: 25px;
+    font-family:"Montserrat",sans-serif;
+    font-weight: bold;
+    font-style:italic ;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: brown;
+}
+
+.dettagli{
+font-size:15px ;
+font-weight:bold ;
+text-align: center;
+font-size: oblique;
+margin-top:20px ;
+border-radius:10px ;
+cursor: pointer;
+
+}
+
+ .descrizione{
+   margin:10px;
+    font-size: 17px;
+    font-family:"Monteserrat",sans-serif ;
+    font-weight:normal;
+    font-style: oblique;
+    text-align: center;
+    color:white ;
+}
+
+#choice div.chosen{
+height: auto;
+}
+#aggiungi{
+    position:absolute;
+    width:40px;
+    height:50px;
+    top:2px;
+    right:5px;
+    cursor: pointer;
+}
+
+#elimina, .delete{
+    position:absolute;
+    width:35px;
+    height:40px;
+    top:2px;
+    right:5px;
+    cursor: pointer;
+}
+
+#listaRistoranti{
+    display: flex;
+    width:1000px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.input{
+border-radius:5px ;
+cursor:pointer;
+
+}
+#ricerca{
+    height:20px;
+    margin-bottom: 5px; 
+    width:20%;
+    margin-right:-250px ;
+}
+label{
+    font-size:17px;
+    margin-bottom: 7px;
+    color:black;
+    margin-left:530px ;
+    font-weight: bold;
+}
+footer{
+    border-top:4px solid white;
+    background-color:rgb(30, 30, 30);
+    padding:40px;
+    height:250px;
+    
+    
+    }
+    footer div img{
+      display:flex;
+      height:50px;
+      width:350px;
+    
+    }
+    footer h1,h2{
+    font-size:30px;
+    line-height:60px;
+    font-weight: normal;
+    font-style: normal;
+    color:lightgray;
+    text-align: center;
+    }
+    footer p{
+    font-size:20px ;
+    font-weight:bold;
+    font-style:oblique;
+    color:slategray; 
+    text-align: left;
+    }
+
+  @media(max-width:500px){
+body,html{
+font-size: 20px;
+width: 1500px;
+}
+article{
+width: 1500px;
+}
+header{
+    height:600px;
+    width:1500px;
+    }
+    nav #flex-conteiner img{
+        height:60px;
+        width:250px;
+        }
+        nav #flex-conteiner{
+        flex-direction:column;
+        justify-content: space-between;
+        align-items:flex-start ;
+        width:1500px;
+        }
+      #flex-conteiner a{
+        display:none;
+      }
+      #menu{
+      display:block;
+      }  
+      section{
+    height:auto;
+    width:1500px;
+      }
+      section h1{
+    font-size:2em ;
+      }
+      #testo1{
+          font-size:1.8em;
+
+      }
+      .testo{
+          font-size:1.8em;
+
+      }
+      #choice, #ristoranti_seguiti{
+        width:1500px;
+      }
+      #listaRistoranti{
+        width:1000px;
+      }
+      .ristoranti div, .div{
+    margin:20px 8px;
+    width:400px;
+    height:500px;
+      }
+      .ristoranti div img, .img{
+    margin-top:15px ;
+    width:260px;
+    height:190px;
+      }
+      .ristoranti div h1, .h1{
+    font-size:1.6em ;
+    margin-top:15px ;
+
+      }
+      
+      header h1 strong{
+        font-size:1.7em;
+        line-height:1.5em;
+        text-align:left;
+        }
+      .ristoranti div p{
+          font-size:1.3em ;
+
+
+        }
+        #aggiungi{
+        width: 55px;
+        height: 55px;
+        right:10px;
+        }
+     
+        #elimina, .delete{
+        width:55px;
+        height:55px;
+        right:10px;
+        
+      }
+      label{
+      font-size:1.1em ;
+      }
+      .descrizione{
+        height:45%;
+        font-size:1.4em ;
+        }
+        .dettagli{
+        font-size:1.2em ;
+        }
+        #modale img{
+          height: 30%;
+          }
+      footer{
+        height:300px;
+        width:1420px;
+        }
+        footer div img{
+        height:80px;
+        width:270px;
+        
+        }
+
+        footer h1,h2{
+        font-size:2em;
+        text-align: center;
+        line-height:1.4em ;
+        text-align:center;
+        }
+        footer p{
+          font-size:1.6em;
+          text-align:center;
+    
+        }
+        
+        }  
+ 

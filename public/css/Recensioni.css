@@ -1,0 +1,417 @@
+body{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    color:black;
+    font-size: 20px;
+
+    
+  }
+
+nav{
+    height:70px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-size:20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(231, 226, 226);
+  }
+
+  #barra a{
+    cursor: pointer;
+    font-size:18px ;
+    font-family:"Monteserrat",sans-serif ;
+    border-right: 2px solid black;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 3px;
+    margin: 2px;
+    color:black;
+    text-decoration: none;
+  }
+
+#barra a:hover{
+color:black;
+background-color: white;
+}
+  #menumobile, #modale.hidden{
+    display: none; 
+  }
+  
+    
+  
+  
+  #menumobile div{
+    width: 35px;
+    height: 3px;
+    background-color: whitesmoke;
+    margin: 5px 0;
+  }
+  
+
+  #title{
+    font-family: "Roboto", sans-serif;
+    font-size: 35px;
+    color: black;
+  }
+
+  section{
+
+    display: flex;
+    flex-direction: column;
+    background-color:lightgray;
+    height:auto;
+
+  }
+
+section h1{
+    font-size: 30px;
+    font-family:"Roboto",sans-serif ;
+    font-style: italic;
+    font-weight: bold;
+    
+  }
+  #principale{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    margin-top:10px;
+    margin-bottom:50px;
+    margin-left:50px;
+    margin-right:50px ;
+    background-color:rgb(231, 226, 226);
+  }
+.hidden{
+  display: none;
+
+}
+  #modale {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+  }
+  .par{
+  display: none;
+  }
+  
+  .no-scroll {
+    overflow: hidden;
+  }
+  #modale div{
+    width: 300px;
+    height: auto;
+    background-color: rgb(186, 185, 185);
+    border-radius:15px;
+  }
+form[name = 'invia']{
+  display: flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items: center;
+
+}
+#annulla_recensione{
+  cursor:pointer;
+  font-size:15px;
+}
+input[type='file']{
+margin-left:-46px ;
+
+}
+input[type='submit']{
+margin-top:20px;
+cursor: pointer;
+}
+  #testo,#intestazione{
+    width: 100%;
+    height: 100px;
+  }
+
+.rec{
+display: flex;
+flex-direction:column;
+border:3px solid black;
+border-radius:10px;
+height:auto;
+width:420px;
+margin-top:15px ;
+margin-bottom:15px ;
+background-color:lightgray;
+}
+.div1{
+display: flex;
+justify-content:flex-start;
+align-items: center;
+}
+.utente{
+width:55px;
+height:55px;
+padding-left:19px  ;
+padding-top:15px ;
+}
+.nome{
+font-size:20px;
+font-weight:bold ;
+font-style:normal;
+text-align:center;
+ padding-left:11px ;
+ vertical-align: middle;
+}
+.blocco{
+display: flex;
+flex-direction: column;
+width:100%;
+height:100%;
+background-color: white;
+border-radius:30px ;
+
+
+
+}
+.img{
+width:380px;
+height:170px;
+padding-left:20px;
+padding-top:20px ;
+padding-right:20px ;
+padding-bottom:20px ;
+border-radius:30px ;
+
+}
+.testo{
+font-size:18px ;
+font-weight:bold;
+font-style: oblique;
+text-align: center;
+font-family: "Roboto",sans-serif;
+margin-top:-10px ;
+}
+.div2{
+display: flex;
+flex-direction:row;
+}
+.h1{
+font-size:16px;
+padding-left:85px ;
+margin-top:-22px ;
+font-weight:bold;
+font-style: italic;
+
+}
+.intestazione{
+padding-top:15px ;
+font-size:22px ;
+font-style: normal;
+font-weight: bold;
+text-align:center;
+}
+.commento{
+display: flex;
+justify-content:space-around ;
+}
+input[type="text"]{
+width:100%;
+border:2px solid black ;
+margin-left:6px;
+margin-bottom:4px ;
+
+}
+.commento img{
+  width:10%;
+  cursor: pointer;
+}
+.miPiace{
+height:25px;
+width:25px;
+padding-left:5px ;
+cursor: pointer;
+
+
+}
+
+.commenti,.divElem,.div_commento{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top:5px;
+  margin-left:5px;
+  margin-right:5px;
+  margin-bottom:5px;
+  background-color:whitesmoke;
+  border-radius:20px ;
+}
+.divElem, .div_commento{
+border:3px solid black;
+margin-bottom:8px;
+width: auto;
+margin-top:4px ;
+margin-left: 4px;
+margin-right: 4px;
+}
+.h1_1{
+text-align:start;
+font-size:18px;
+font-weight:bold;
+font-family:"Roboto",sans-serif;
+font-style:normal;
+padding-left:6px ;
+padding-right:4px ;
+}
+.p{
+  
+  font-size:17px ;
+  font-weight:bold;
+  font-style: oblique;
+  font-family:"Roboto",sans-serif ;
+  text-align: start;
+  padding-left: 6px;
+  padding-bottom:2px ;
+
+
+}
+.numero{
+  color:rgb(230, 17, 17);
+  padding-left:375px;
+}
+.nuovaRecensione{
+border-radius:15px ;
+border:2px solid black;
+}
+#errore{
+  font-size:20px ;
+  color:brown;
+}
+.time{
+font-size:16px ;
+font-weight: bold;
+font-style: normal;
+padding-left:6px;
+padding-bottom:5px;
+padding-top:3px ;
+padding-right:2px ;
+color:rgba(0, 0, 0, 0.796) ;
+
+}
+.time1{
+  font-size:17px ;
+  font-weight: bold;
+  font-style:normal;
+  padding-bottom:2px;
+  padding-top:3px ;
+  color:rgba(0, 0, 0, 0.796) ;
+  
+}
+@media(max-width:500px){
+body,html{
+font-size:1em ;
+width:1160px;
+}
+nav{
+width:1140px;
+}
+section{
+width:1160px;
+height: auto;
+
+}
+section h1{
+font-size:2em ;
+}
+#title{
+font-size:1.6em ;
+}
+#barra a{
+display: none;
+}
+#menumobile{
+  display: block;
+
+}
+#modale{
+height: 100%;
+width: 100%;
+flex-direction: column;
+}
+#modale div{
+width:300px;
+height:auto ;
+}
+#annulla_recensione{
+font-size:1.5em ;
+}
+#testo,#intestazione{
+  width: 100%;
+  height:100px;
+
+}
+
+.nome{
+font-size:1.5em ;
+}
+.h1{
+font-size:1.3em;
+}
+.recensione div{
+font-size:1.5em ;
+}
+input[type='file']{
+  margin-left:2px ;
+  font-size:1.175em ;
+  }
+  input[type='submit']{
+    margin-top:20px;
+    cursor: pointer;
+    font-size:1.2em ;
+    }
+    .img{
+    width:380px ;
+    height:200px ;
+    }
+    .intestazione{
+    font-size:1.5em ;
+    }
+    .testo{
+    font-size:1.4em;
+    }
+    .time,.time1{
+    font-size:1.3em;
+    }
+    .miPiace{
+    width:27px;
+    height: 27px;
+    }
+    .numero{
+    font-size:1.6em ;
+    }
+    .commento img{
+    width:12%;
+    }
+    .div_commento,.divElem{
+    width:auto;
+    margin-top:6px ;
+    margin-left:6px ;
+    margin-right:6px ;
+    }
+    .h1_1{
+    font-size: 1.3em;
+    }
+    .p{
+    font-size:1.2em ;
+    }
+}

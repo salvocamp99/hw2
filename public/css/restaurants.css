@@ -1,0 +1,407 @@
+a{
+  cursor:pointer;
+}
+a.button{
+border:3px solid black;
+padding:15px 20px;
+border-radius: 20px;
+}
+a.button:hover{
+background-color:white ;
+color:black;
+}
+
+body{
+color: black;
+font-family: 'Inter',serif;
+font-size:20px;
+margin:0;
+width:100%;
+}
+.button,header nav,
+footer h1,h2{
+font-family: "Open Sans",sans-serif;
+font-style: normal;
+text-transform: uppercase;
+}
+
+
+header{
+  color:lightgray;
+  height: 700px;
+  background-image:url('https://www.agrodolce.it/app/uploads/2014/02/Comandante-32-980x603.jpg' );
+  background-position:center;
+  background-size:cover;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  position: relative;
+}
+header h1 strong{
+  font-size:48px;
+  color:brown;
+  background-color:lightgray ;
+}
+#overlay{
+  background-color:rgba(0, 0, 0, .3);
+  position:absolute;
+  top: 0; 
+  bottom:0;
+  height: 100%;
+  width: 100%;
+  }
+  header h1{
+    font-size:25px ;
+    line-height:60px;
+    text-align: center;
+    font-weight: bold;
+    z-index:1;
+    text-transform: uppercase;
+  }
+
+header nav{
+  background-color:rgb(231, 226, 226);
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  font-size:18px;
+  padding:20px;
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+}
+nav #flex-conteiner{
+  display:flex ;
+  flex-direction:row;
+  color: rgba(250, 243, 243, 0.750);
+  justify-content:space-between;
+  align-items: center;
+  padding-left:none;
+  border-bottom:2px solid grey ;
+  font-weight: bold;
+  height: 70px;
+  flex-grow: 1;
+
+
+}
+nav #flex-conteiner a{
+color:black;
+border-right:2px solid black ;
+padding:10px 12px;
+margin: 0;
+font-family: "Monteserrat",sans-serif;
+font-size: 18px;
+text-decoration: none;
+}
+nav div img{
+display: flex;
+width:350px;
+height:50px;
+
+}
+
+#flex-conteiner a:hover{
+background-color: white;
+color:black;
+}
+#menu{
+  display:none;
+}
+#menu div{
+width:35px;
+height: 3px;
+background-color:rgba(250, 243, 243, 0.750);
+margin:7px;
+}
+section{
+  display: flex;
+  flex-direction: column;
+  height:auto;
+  align-items: center;
+  background-color:rgb(202, 202, 201);
+}
+
+section h1{
+  font-size:40px ;
+  font-family:"Roboto",sans-serif ;
+  font-weight:bold ;
+  font-style:italic ;
+  text-align: center;
+
+}
+
+
+
+
+
+
+.hidden{
+  display:none;
+}
+.testo{
+  width:700px;
+  text-align: left;
+  margin-top:40px;
+  margin-bottom:10px;
+  color:black;
+  font-size:35px ;
+  font-weight:bold;
+}
+
+#scelta{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: top;
+  width:1000px;
+  background-color:rgb(231, 226, 226);
+}
+
+#scelta.ristoranti{
+  margin-bottom: 100px;
+}
+
+.ristoranti div{
+  display: flex;
+  flex-direction: column;
+  justify-content:top;
+  align-items: center;
+  width:300px;
+  height:400px;
+  border:3px solid black;
+  border-radius:25px ;
+  margin:15px 5px;
+  position:relative;
+  background-color:lightgray ;
+}
+
+.ristoranti div img{
+  margin-top: 10px;
+  width:200px;
+  height:140px;
+  border-radius: 25px;
+}
+
+.ristoranti div h1{
+  font-size: 25px;
+  font-family:"Montserrat",sans-serif;
+  font-weight: bold;
+  font-style:italic ;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: brown;
+}
+
+.primo,.secondo {
+    border:1px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 98px;
+    border-radius:10px ;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.descrizione{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-family:"Monteserrat",sans-serif ;
+  font-weight:normal;
+  font-style: oblique;
+  text-align: center;
+}
+
+#scelta div.chosen{
+height: auto;
+}
+
+
+
+
+#Ristoranti{
+  display: flex;
+  width:1000px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#modale{
+  position: fixed;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  background-color:rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  }
+  #modale.hidden{
+    display:none;
+  }
+  #modale img{
+  height: 50%;
+  }
+  .no-scroll{
+    overflow: hidden;
+  }
+.input{
+border-radius:10px ;
+cursor:pointer;
+width:100px;
+height: 30px;
+font-size:15px ;
+margin-top:10px ;
+
+}
+
+footer{
+  border-top:4px solid white;
+  background-color:rgb(30, 30, 30);
+  padding:40px;
+  height:250px;
+  
+  
+  }
+  footer div img{
+    display:flex;
+    height:50px;
+    width:350px;
+  
+  }
+  footer h1,h2{
+  font-size:30px;
+  line-height:60px;
+  font-weight: normal;
+  font-style: normal;
+  color:lightgray;
+  text-align: center;
+  }
+  footer p{
+  font-size:20px ;
+  font-weight:bold;
+  font-style:oblique;
+  color:slategray; 
+  text-align: left;
+  }
+
+@media(max-width:500px){
+body,html{
+font-size: 20px;
+width: 1000px;
+}
+article{
+width: 1000px;
+}
+header{
+  height:600px;
+  width:1000px;
+  }
+  nav #flex-conteiner img{
+      height:50px;
+      width:250px;
+      }
+      nav #flex-conteiner{
+      flex-direction:column;
+      justify-content: space-between;
+      align-items:flex-start ;
+      width:1000px;
+      }
+    #flex-conteiner a{
+      display:none;
+    }
+    header h1 strong{
+      font-size:1.7em;
+      line-height:1.5em;
+      text-align:left;
+      }
+    #menu{
+    display:block;
+    }  
+    section{
+  height:auto;
+  width:1000px;
+    }
+    section h1{
+  font-size:1.8em ;
+    }
+
+    .testo{
+        font-size:1.5em;
+
+    }
+    #choice{
+      width:1000px;
+    }
+    #listaRistoranti{
+      width:1000px;
+    }
+    .ristoranti div{
+  margin:20px 8px;
+  width:350px;
+  height:450px;
+    }
+    .ristoranti div img{
+  margin-top:15px ;
+  width:220px;
+  height:150px;
+    }
+    .ristoranti div h1{
+  font-size:1.2em ;
+  margin-top:15px ;
+
+    }
+    #modale img{
+      height: 30%;
+      }
+    header h1 strong{
+      font-size:1.2em;
+      line-height:1.5em;
+      text-align:left;
+      }
+    .descrizione{
+        font-size:0.9em ;
+      }
+      .primo,.secondo{
+      font-size:0.7em ;
+      width:105px;
+      }
+    
+   
+    .input{
+    width:100px ;
+    height:30px ;
+    font-size:0.9em ;
+    }
+    
+    footer{
+      height:300px;
+      width:920px;
+      }
+      footer div img{
+      height:50px;
+      width:250px;
+      
+      }
+      footer h1,h2{
+      font-size:1.8em;
+      text-align: center;
+      line-height:1.4em ;
+      text-align:center;
+      }
+      footer p{
+        font-size:1.4em;
+        text-align:center;
+  
+      }
+      
+      }  
+
